@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-8591380.903880, -1327690.977346, -8590876.107339, -1327312.043525], map.getSize());
+map.getView().fit([-8591371.825614, -1327577.798614, -8591244.208169, -1327483.053293], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -843,17 +843,6 @@ if (elementToMove && parentElement) {
 
 //layer search
 
-var searchLayer = new SearchLayer({
-    layer: lyr_MANZANAS_2,
-    colName: 'COD_MZ',
-    zoom: 10,
-    collapsed: true,
-    map: map
-});
-map.addControl(searchLayer);
-document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
-document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
-    
 
 //scalebar
 
