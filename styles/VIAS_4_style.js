@@ -9,7 +9,7 @@ var style_VIAS_4 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "10.4px \'Open Sans\', sans-serif";
+    var labelFont = "10.4px \'Arial Narrow\', sans-serif";
     var labelFill = "#323232";
     var bufferColor = "#fafafa";
     var bufferWidth = 3.0;

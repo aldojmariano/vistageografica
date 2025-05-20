@@ -9,7 +9,7 @@ var style_MANZANAS_2 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "15.600000000000001px \'Franklin Gothic Medium\', sans-serif";
+    var labelFont = "15.600000000000001px \'Arial Black\', sans-serif";
     var labelFill = "#d06935";
     var bufferColor = "#fafafa";
     var bufferWidth = 3.0;
