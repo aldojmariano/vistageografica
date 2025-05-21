@@ -44,6 +44,25 @@
             margin: 0;
         }
         </style>
+
+        <style>
+        #custom-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px; /* o usa right: 10px para cambiar de lado */
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 6px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        #custom-logo img {
+            height: 50px;
+        }
+        </style>
+
+
+
         <title></title>
     </head>
     <body>
@@ -53,6 +72,11 @@
                 <div id="popup-content"></div>
             </div>
         </div>
+
+        <div id="custom-logo">
+            <img src="resources/Logo_region_callao.jpg" alt="Logo" />
+        </div>
+
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
