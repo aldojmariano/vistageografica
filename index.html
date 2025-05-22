@@ -71,11 +71,67 @@
 
         </style>
 
+        <style>
+        /* Estilo general para quitar márgenes */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Encabezado institucional */
+        #top-banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #eeeeee;
+            padding: 10px 20px;
+            height: 80px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        #top-banner img {
+            height: 60px;
+        }
+
+        #top-banner h1 {
+            font-size: 20px;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Contenedor del mapa ocupa el resto del espacio */
+        #map-container {
+            height: calc(100% - 80px); /* Resta la altura del banner */
+            width: 100%;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        </style>
 
 
         <title></title>
     </head>
     <body>
+        <header id="top-banner">
+            <img src="resources/logo.png" alt="Logo institucional">
+            <h1>Nombre del Proyecto o Institución</h1>
+        </header>
+
+        <main id="map-container">
+            <div id="map">
+                <div id="popup" class="ol-popup">
+                    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                    <div id="popup-content"></div>
+                </div>
+            </div>
+        </main>
+
+
+
         <div id="map">
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
