@@ -81,28 +81,17 @@
 
         /* Encabezado institucional */
         #top-banner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #eeeeee;
-            padding: 10px 20px;
-            height: 80px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            background-image: url('resources/Logo_banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 120px; /* Ajusta la altura según el diseño */
+            width: 100%;
         }
 
-        #top-banner img {
-            height: 60px;
-        }
-
-        #top-banner h1 {
-            font-size: 20px;
-            margin: 0;
-            color: #333;
-        }
-
+                
         /* Contenedor del mapa ocupa el resto del espacio */
         #map-container {
-            height: calc(100% - 80px); /* Resta la altura del banner */
+            height: calc(100% - 120px); /* Resta la altura del banner */
             width: 100%;
         }
 
@@ -116,10 +105,7 @@
         <title></title>
     </head>
     <body>
-        <header id="top-banner">
-            <img src="resources/LOGO_REGION_CALLAO_FINAL.jpg" alt ="Logo institucional">
-            <h1>Geovisor del Piloto Puerto Pachacutec</h1>
-        </header>
+        <header id="top-banner"></header>
 
         <main id="map-container">
             <div id="map">
