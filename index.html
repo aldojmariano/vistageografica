@@ -101,6 +101,32 @@
         }
         </style>
 
+        <style>
+        #map-title {
+            position: absolute;
+            top: 140px; /* ajusta según el banner */
+            right: 20px;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-align: right;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        #map-title h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #2c3e50;
+        }
+
+        #map-title p {
+            margin: 0;
+            font-size: 12px;
+            color: #555;
+        }
+        </style>
+
 
         <title></title>
     </head>
@@ -123,6 +149,13 @@
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
                 <div id="popup-content"></div>
             </div>
+            
+            <div id="map-title">
+                <h2>GEOVISOR</h2>
+                <p>UNIDAD DE SANEAMIENTO Y CATASTRO</p>
+            </div>
+
+
         </div>
 
         
